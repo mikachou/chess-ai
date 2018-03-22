@@ -2,7 +2,7 @@ import chess
 
 
 def inputMove():
-	move = input('Move:')
+    move = input('Move:')
 
 
 def minimax(depth, board, alpha, beta, maximizePlayer):
@@ -133,21 +133,21 @@ def evaluate(board):
 board = chess.Board()
 
 while not board.is_game_over():
-	print()
-	print(board)
-	print()
-	if board.turn:
-		while board.turn:
-			move = input('White Move:')
-			try:
-				board.push_san(move)
-			except:
-				print('Illegal move')
+    print()
+    print(board)
+    print()
+    if board.turn:
+        while board.turn:
+            move = input('White Move:')
+            try:
+                board.push_san(move)
+            except:
+                print('Illegal move')
 
-	else:
-		move = findMove(3)
-		print('Black Move:', board.san(move))
-		board.push(move)
+    else:
+        move = findMove(3)
+        print('Black Move:', board.san(move))
+        board.push(move)
 
 print()
 print(board)
