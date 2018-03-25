@@ -4,9 +4,9 @@ This script is a simple AI playing chess, and is written from the instructions f
 
 ## Requirements
 
-This script requires the python-chess library and optionnaly virtualenv
+This script requires python3, the python-chess library and optionnaly virtualenv
 
-## Install
+## Install in a virtualenv
 
 First, install as root user virtualenv if not previously installed.
 
@@ -36,7 +36,7 @@ Finally install python-chess package :
 ```
 pip3 install python-chess
 ```
-The script should be now usable.
+The script should now be usable.
 
 ## How to use
 Launch the script with following command :
